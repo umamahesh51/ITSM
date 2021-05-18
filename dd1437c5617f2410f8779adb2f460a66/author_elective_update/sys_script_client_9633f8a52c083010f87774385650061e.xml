@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>additional_information</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Test</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   g_form.addInfoMessage(g_form.getValue('status'));
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-10 19:07:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9633f8a52c083010f87774385650061e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_update_name>sys_script_client_9633f8a52c083010f87774385650061e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-10 19:07:44</sys_updated_on>
+        <table>x_snc_it_service_it_service_request</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</application>
+        <file_path/>
+        <instance_id>94a73c5d08232010ca23f60a20fb8bfb</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_script_client_9633f8a52c083010f87774385650061e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;additional_information&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Test&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   g_form.addInfoMessage(g_form.getValue('status'));
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-10 19:07:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9633f8a52c083010f87774385650061e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="IT Service Request Management" source="x_snc_it_service"&gt;dd1437c5617f2410f8779adb2f460a66&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="IT Service Request Management"&gt;dd1437c5617f2410f8779adb2f460a66&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_9633f8a52c083010f87774385650061e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-10 19:07:44&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_it_service_it_service_request&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2041601075</payload_hash>
+        <record_name>Test</record_name>
+        <reverted_from/>
+        <source>d91437c5617f2410f8779adb2f460a69</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-10 19:07:44</sys_created_on>
+        <sys_id>cf73b4a52c083010f877743856500667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17957ad964a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-10 19:07:44</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>0b73b4a5540830104593c52425c43467</update_guid>
+        <update_guid_history>0b73b4a5540830104593c52425c43467:-2041601075</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 03:41:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>3b7793dd6b664a60beb037513f305900</sys_id>
+        <sys_metadata>9633f8a52c083010f87774385650061e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_parent display_value="IT Service Request">3ed60dab61b7a810f8779adb2f460a9d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_scope_delete display_value="">3f172406913d4772b02147cb46c60764</sys_scope_delete>
+        <sys_update_name>sys_script_client_9633f8a52c083010f87774385650061e</sys_update_name>
+        <sys_update_version display_value="sys_script_client_9633f8a52c083010f87774385650061e">cf73b4a52c083010f877743856500667</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 03:41:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

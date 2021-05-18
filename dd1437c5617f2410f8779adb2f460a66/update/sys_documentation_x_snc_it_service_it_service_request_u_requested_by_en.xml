@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_requested_by" label="Requested By" language="en" table="x_snc_it_service_it_service_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_requested_by</element>
+            <help/>
+            <hint/>
+            <label>Requested By</label>
+            <language>en</language>
+            <name>x_snc_it_service_it_service_request</name>
+            <plural>Requested Bys</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-04 17:13:26</sys_created_on>
+            <sys_id>5acf11eb61f7a810f8779adb2f460a38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Requested By</sys_name>
+            <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_it_service_it_service_request_u_requested_by_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-04 17:13:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

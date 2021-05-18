@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="46a391e361f7a810f8779adb2f460a35" sys_domain="global" table="x_snc_it_service_it_service_request" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-04 16:20:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0aa391e361f7a810f8779adb2f460a37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_it_service_it_service_request" name="x_snc_it_service_it_service_request" sys_domain="global" view="8ea351e361f7a810f8779adb2f460ad7">46a391e361f7a810f8779adb2f460a35</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_it_service_it_service_request" sys_domain="global" view="8ea351e361f7a810f8779adb2f460ad7">82a391e361f7a810f8779adb2f460a33</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-04 16:20:27</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-04 16:20:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6a391e361f7a810f8779adb2f460a38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_it_service_it_service_request" name="x_snc_it_service_it_service_request" sys_domain="global" view="8ea351e361f7a810f8779adb2f460ad7">46a391e361f7a810f8779adb2f460a35</sys_ui_form>
+            <sys_ui_section caption="Additional Data" display_value="Additional Data" name="x_snc_it_service_it_service_request" sys_domain="global" view="8ea351e361f7a810f8779adb2f460ad7">42a391e361f7a810f8779adb2f460a34</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-04 16:20:27</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_it_service_it_service_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-04 16:20:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>46a391e361f7a810f8779adb2f460a35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_it_service_it_service_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+            <sys_update_name>sys_ui_form_sections_46a391e361f7a810f8779adb2f460a35</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-04 16:20:27</sys_updated_on>
+            <sys_user/>
+            <view display_value="Approver" name="Approver">8ea351e361f7a810f8779adb2f460ad7</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Request Type" max_length="40" name="x_snc_it_service_request_type" sizeclass="4" type="collection">
+        <element label="Approvers" max_length="4000" name="approvers" type="glide_list"/>
+        <element label="Is Approval Required" max_length="40" name="is_approval_required" type="boolean"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Approvers" max_length="1024" name="u_glide_list_1" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Request Type" mandatory="true" max_length="255" name="u_string_full_utf8_3" type="string_full_utf8"/>
+    </element>
+</database>
