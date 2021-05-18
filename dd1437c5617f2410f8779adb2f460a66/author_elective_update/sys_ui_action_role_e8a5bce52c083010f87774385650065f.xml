@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="DELETE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-10 19:17:39</sys_created_on>
+        <sys_id>e8a5bce52c083010f87774385650065f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request For Additional Information.x_snc_it_service.it admin</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_ui_action display_value="Request For Additional Information">42dde8612c083010f8777438565006cb</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_e8a5bce52c083010f87774385650065f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-10 19:17:39</sys_updated_on>
+        <sys_user_role display_value="x_snc_it_service.it admin" name="x_snc_it_service.it admin">93e4bfc5617f2410f8779adb2f460a73</sys_user_role>
+    </sys_ui_action_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</application>
+        <file_path/>
+        <instance_id>94a73c5d08232010ca23f60a20fb8bfb</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ui_action_role_e8a5bce52c083010f87774385650065f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-10 19:17:39</sys_created_on><sys_id>e8a5bce52c083010f87774385650065f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Request For Additional Information.x_snc_it_service.it admin</sys_name><sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package><sys_policy/><sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope><sys_ui_action display_value="Request For Additional Information">42dde8612c083010f8777438565006cb</sys_ui_action><sys_update_name>sys_ui_action_role_e8a5bce52c083010f87774385650065f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-10 19:17:39</sys_updated_on><sys_user_role display_value="x_snc_it_service.it admin" name="x_snc_it_service.it admin">93e4bfc5617f2410f8779adb2f460a73</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+        <payload_hash>66815476</payload_hash>
+        <record_name>Request For Additional Information.x_snc_it_service.it admin</record_name>
+        <reverted_from/>
+        <source>d91437c5617f2410f8779adb2f460a69</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-10 19:17:39</sys_created_on>
+        <sys_id>04c574292c083010f877743856500691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17957b6a96a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-10 19:17:39</sys_updated_on>
+        <type>UI Action Role</type>
+        <update_guid>c4c5bce5190830109715044bae6ecddc</update_guid>
+        <update_guid_history>c4c5bce5190830109715044bae6ecddc:66815476</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 04:16:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action_role">sys_ui_action_role</sys_db_object>
+        <sys_id>0af9a53c0a89437c91cae522a4ab1cc9</sys_id>
+        <sys_metadata>e8a5bce52c083010f87774385650065f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request For Additional Information.x_snc_it_service.it admin</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_scope_delete display_value="">3f172406913d4772b02147cb46c60764</sys_scope_delete>
+        <sys_update_name>sys_ui_action_role_e8a5bce52c083010f87774385650065f</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_role_e8a5bce52c083010f87774385650065f">04c574292c083010f877743856500691</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 04:16:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

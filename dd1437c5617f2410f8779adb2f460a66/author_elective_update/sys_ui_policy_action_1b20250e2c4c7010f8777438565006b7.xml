@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>false</disabled>
+        <field>u_reference_3</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 11:40:12</sys_created_on>
+        <sys_id>1b20250e2c4c7010f8777438565006b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_reference_3</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_update_name>sys_ui_policy_action_1b20250e2c4c7010f8777438565006b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 11:40:12</sys_updated_on>
+        <table>x_snc_it_service_it_service_request</table>
+        <ui_policy display_value="Make Assigned To field Read Only">0b0e1d8a2c4c7010f8777438565006db</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</application>
+        <file_path/>
+        <instance_id>94a73c5d08232010ca23f60a20fb8bfb</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ui_policy_action_1b20250e2c4c7010f8777438565006b7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>false</disabled><field>u_reference_3</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-12 11:40:12</sys_created_on><sys_id>1b20250e2c4c7010f8777438565006b7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_reference_3</sys_name><sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package><sys_policy/><sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope><sys_update_name>sys_ui_policy_action_1b20250e2c4c7010f8777438565006b7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-12 11:40:12</sys_updated_on><table>x_snc_it_service_it_service_request</table><ui_policy display_value="Make Assigned To field Read Only">0b0e1d8a2c4c7010f8777438565006db</ui_policy><visible>ignore</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1199845527</payload_hash>
+        <record_name>u_reference_3</record_name>
+        <reverted_from/>
+        <source>d91437c5617f2410f8779adb2f460a69</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 11:40:12</sys_created_on>
+        <sys_id>fe30650e2c4c7010f87774385650066d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179606091fb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 11:40:12</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>3a30650e564c701055eda3d02985a96d</update_guid>
+        <update_guid_history>3a30650e564c701055eda3d02985a96d:1199845527</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 18:24:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>43f12578d5834bce95c8c2b762383a04</sys_id>
+        <sys_metadata>1b20250e2c4c7010f8777438565006b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_reference_3</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_scope_delete display_value="">3f172406913d4772b02147cb46c60764</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_1b20250e2c4c7010f8777438565006b7</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_1b20250e2c4c7010f8777438565006b7">fe30650e2c4c7010f87774385650066d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 18:24:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

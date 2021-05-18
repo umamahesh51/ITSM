@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>This will populate the Requested By Field for the first time when we create the record.</description>
+        <field>additional_information</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Update Requested By</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    //Type appropriate comment here, and begin script below
+    var requestedBy = g_form.getValue('u_requested_by');
+    if (requestedBy || requestedBy == "" || requestedBy == " ") {
+		g_form.addInfoMessage(g_user);
+		g_form.setValue('u_requested_by', g_user);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 03:48:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b039626d2c0c3010f877743856500673</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Update Requested By</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_update_name>sys_script_client_b039626d2c0c3010f877743856500673</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 03:58:02</sys_updated_on>
+        <table>x_snc_it_service_it_service_request</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</application>
+        <file_path/>
+        <instance_id>94a73c5d08232010ca23f60a20fb8bfb</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_script_client_b039626d2c0c3010f877743856500673</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;This will populate the Requested By Field for the first time when we create the record.&lt;/description&gt;&lt;field&gt;additional_information&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Update Requested By&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    //Type appropriate comment here, and begin script below
+    var requestedBy = g_form.getValue('u_requested_by');
+    if (requestedBy || requestedBy == "" || requestedBy == " ") {
+		g_form.addInfoMessage(g_user);
+		g_form.setValue('u_requested_by', g_user);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-11 03:48:11&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b039626d2c0c3010f877743856500673&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update Requested By&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="IT Service Request Management" source="x_snc_it_service"&gt;dd1437c5617f2410f8779adb2f460a66&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="IT Service Request Management"&gt;dd1437c5617f2410f8779adb2f460a66&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b039626d2c0c3010f877743856500673&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-11 03:58:02&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_it_service_it_service_request&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2042656628</payload_hash>
+        <record_name>Update Requested By</record_name>
+        <reverted_from/>
+        <source>d91437c5617f2410f8779adb2f460a69</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 03:58:02</sys_created_on>
+        <sys_id>cfdcaaad2c0c3010f8777438565006b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179599318890000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 03:58:02</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>4bdcaaadf40c301008d66ac65cb7f4b3</update_guid>
+        <update_guid_history>4bdcaaadf40c301008d66ac65cb7f4b3:-2042656628,059ca6edd30c30100624fb12b653ab27:-1008851037,945c6aadb90c3010a2e5251d8174bdf9:-1557054767,0d5b2aad6e0c3010d2537ef6eacf800e:-1785689956,67faa2adda0c30107adbc4736bdaa2c5:-686125522,b5da626de90c3010dd701150d39011f8:1905626433,f29aee6da50c3010f7cd9e9147a084b4:-1473652753</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 04:04:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>1ab1e2059995480183e56476bf866b31</sys_id>
+        <sys_metadata>b039626d2c0c3010f877743856500673</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Requested By</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_parent display_value="IT Service Request">3ed60dab61b7a810f8779adb2f460a9d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_scope_delete display_value="">3f172406913d4772b02147cb46c60764</sys_scope_delete>
+        <sys_update_name>sys_script_client_b039626d2c0c3010f877743856500673</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b039626d2c0c3010f877743856500673">cfdcaaad2c0c3010f8777438565006b3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 04:04:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

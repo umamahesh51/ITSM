@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="IT Service Request" max_length="40" name="x_snc_it_service_it_service_request" sizeclass="16" type="collection">
+        <element label="Additional Information" max_length="40" name="additional_information" type="string"/>
+        <element choice="1" label="Approval" max_length="40" name="approval" read_only="true" type="choice">
+            <choice/>
+        </element>
+        <element label="Approval History" max_length="4000" name="approval_history" type="journal"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" default="3" label="Priority" mandatory="true" max_length="40" name="priority" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="Requested On" mandatory="true" max_length="40" name="requested_on" type="glide_date"/>
+        <element choice="1" label="Status" max_length="40" name="status" read_only="true" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Pending Approval" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Processing" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Additional Information Requested" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Closed" sequence="5" value="6"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Assigned To" max_length="32" name="u_reference_3" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Request Type" mandatory="true" max_length="32" name="u_reference_4" reference="x_snc_it_service_request_type" type="reference"/>
+        <element attributes="encode_utf8=false" label="Requested For" mandatory="true" max_length="32" name="u_reference_6" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Requested By" mandatory="true" max_length="32" name="u_requested_by" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="40" name="u_string_1" type="string"/>
+        <index name="index">
+            <element name="u_reference_4"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_3"/>
+        </index>
+        <index name="index3">
+            <element name="u_requested_by"/>
+        </index>
+        <index name="index4">
+            <element name="u_reference_6"/>
+        </index>
+    </element>
+</database>

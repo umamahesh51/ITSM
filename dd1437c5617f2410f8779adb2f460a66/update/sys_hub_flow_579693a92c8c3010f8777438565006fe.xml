@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This will take care of initiating the Request Additional Information workflow when Admin Requests for the Additional Information from the employee.</description>
+        <internal_name>request_addition_information_sub_flow</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Request Addition Information Sub flow</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 07:00:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>579693a92c8c3010f8777438565006fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Addition Information Sub flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_update_name>sys_hub_flow_579693a92c8c3010f8777438565006fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 07:00:27</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=579693a92c8c3010f8777438565006fe"/>
+    <sys_variable_value action="delete_multiple" query="document_key=579693a92c8c3010f8777438565006fe"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=579693a92c8c3010f8777438565006fe^sys_idNOT IN5396d3a92c8c3010f877743856500601"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>579693a92c8c3010f8777438565006fe</id>
+        <name>Request Addition Information Sub flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-11 07:00:28</sys_created_on>
+        <sys_id>5396d3a92c8c3010f877743856500601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-11 07:00:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+</record_update>

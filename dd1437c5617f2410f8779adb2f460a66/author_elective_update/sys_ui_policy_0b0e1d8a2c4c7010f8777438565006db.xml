@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_snc_it_service_it_service_request">u_reference_3=6816f79cc0a8016401c5a33be04be441^EQ<item display_table="sys_user" display_value="System Administrator" endquery="false" field="u_reference_3" goto="false" newquery="false" operator="=" or="false" value="6816f79cc0a8016401c5a33be04be441"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>false</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	
+}]]></script_true>
+        <set_values/>
+        <short_description>Make Assigned To field Read Only</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 11:32:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0b0e1d8a2c4c7010f8777438565006db</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Make Assigned To field Read Only</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_update_name>sys_ui_policy_0b0e1d8a2c4c7010f8777438565006db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 11:38:33</sys_updated_on>
+        <table>x_snc_it_service_it_service_request</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</application>
+        <file_path/>
+        <instance_id>94a73c5d08232010ca23f60a20fb8bfb</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ui_policy_0b0e1d8a2c4c7010f8777438565006db</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_snc_it_service_it_service_request"&gt;u_reference_3=6816f79cc0a8016401c5a33be04be441^EQ&lt;item display_table="sys_user" display_value="System Administrator" endquery="false" field="u_reference_3" goto="false" newquery="false" operator="=" or="false" value="6816f79cc0a8016401c5a33be04be441"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;false&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+	
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Make Assigned To field Read Only&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-12 11:32:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0b0e1d8a2c4c7010f8777438565006db&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Make Assigned To field Read Only&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="IT Service Request Management" source="x_snc_it_service"&gt;dd1437c5617f2410f8779adb2f460a66&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="IT Service Request Management"&gt;dd1437c5617f2410f8779adb2f460a66&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_0b0e1d8a2c4c7010f8777438565006db&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-12 11:38:33&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_it_service_it_service_request&lt;/table&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1688044762</payload_hash>
+        <record_name>Make Assigned To field Read Only</record_name>
+        <reverted_from/>
+        <source>d91437c5617f2410f8779adb2f460a69</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 11:38:33</sys_created_on>
+        <sys_id>eadf110e2c4c7010f8777438565006dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179605f102c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 11:38:33</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>66df110e1f4c7010edea8de4675033dc</update_guid>
+        <update_guid_history>66df110e1f4c7010edea8de4675033dc:1688044762,5e9fd5ca744c7010ca200a2b22237e10:1788878854,467e51ca5c4c70106861010bf454ee05:-1586940825</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 18:24:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>160f535b3f4e482282b41cd5998d67f9</sys_id>
+        <sys_metadata>0b0e1d8a2c4c7010f8777438565006db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Make Assigned To field Read Only</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_parent display_value="IT Service Request">3ed60dab61b7a810f8779adb2f460a9d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_scope_delete display_value="">3f172406913d4772b02147cb46c60764</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_0b0e1d8a2c4c7010f8777438565006db</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_0b0e1d8a2c4c7010f8777438565006db">eadf110e2c4c7010f8777438565006dc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 18:24:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

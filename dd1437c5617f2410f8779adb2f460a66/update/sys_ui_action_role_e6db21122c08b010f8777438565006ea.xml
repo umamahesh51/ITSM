@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-13 07:14:48</sys_created_on>
+        <sys_id>e6db21122c08b010f8777438565006ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_snc_it_service.it support executive</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_ui_action display_value="Close The Request">d9db25122c08b010f87774385650069b</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_e6db21122c08b010f8777438565006ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-13 07:14:48</sys_updated_on>
+        <sys_user_role display_value="x_snc_it_service.it support executive" name="x_snc_it_service.it support executive">dbe4bfc5617f2410f8779adb2f460a9c</sys_user_role>
+    </sys_ui_action_role>
+</record_update>
