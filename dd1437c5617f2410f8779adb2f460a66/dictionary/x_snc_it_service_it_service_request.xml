@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="IT Service Request" max_length="40" name="x_snc_it_service_it_service_request" sizeclass="16" type="collection">
+    <element label="IT Service Request" max_length="40" name="x_snc_it_service_it_service_request" sizeclass="30" type="collection">
         <element label="Additional Information" max_length="40" name="additional_information" type="string"/>
         <element choice="1" label="Approval" max_length="40" name="approval" read_only="true" type="choice">
             <choice/>

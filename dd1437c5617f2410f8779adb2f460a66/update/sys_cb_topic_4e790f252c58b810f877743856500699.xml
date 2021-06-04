@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>This is to create a IT Service request </description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.34",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "5c41d7ea88184ac5b57d3ff84b5705aa": {
+          "id": "5c41d7ea88184ac5b57d3ff84b5705aa",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "898bd71ac63e44a3a782ff75887b55fa": {
+          "id": "898bd71ac63e44a3a782ff75887b55fa",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": "(function execute() {\n    /* Return a quoted string.  For example:\n\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessage('hi there {0}', [vaInputs.first_name]);\n       } else {\n           return gs.getMessage('how are you {0}', [vaInputs.last_name]);\n       }\n    */\n    if(vaVars.record_id!=null){\n        return 'As per your request a new Request is created.'\n    }\n    return '';\n})()\n",
+            "mode": "script"
+          }
+        },
+        "c45494130ba944e5a0c4e209f924aa14": {
+          "id": "c45494130ba944e5a0c4e209f924aa14",
+          "stepType": "TextOutput",
+          "name": "Welcome message",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hello "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "I can help you with creating new IT Service Request or show your existing requests."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "2c545df349f647c59d45a84ad9b53cb7": {
+          "stepType": "ChoicePrompt",
+          "name": "user option",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please Select the option"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "You have selected the option "
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "variableId": "d266ac33d3964863aa42cd88e68cbcda",
+          "id": "2c545df349f647c59d45a84ad9b53cb7",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "feb218f2b0944c0b86c2f0deedf032b6": {
+          "id": "feb218f2b0944c0b86c2f0deedf032b6",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "324d50fc1cd54b11b8a13e976fbb6e76": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "Request Type",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please select the Request Type"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "6b142d143614423d98db59089a176a94",
+          "id": "324d50fc1cd54b11b8a13e976fbb6e76",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Sorry, there are no request types available in the system."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_scripted_query",
+            "value": "(function execute(table) {\n   \n\n        var options = [];\n        var gr = new GlideRecordSecure(table);\n        //gr.addEncodedQuery('active=true^numberSTARTSWITHINC001001');\n        gr.setLimit(10);\n        gr.query();\n        while(gr.next()) {\n            options.push({ 'value': gr.getUniqueValue(), 'label': gr.getValue('u_string_full_utf8_3') });\n        }\n\n        return options;\n    \n})(table)\n"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "d7d53b7cea824a278e58064ad4c5c664": {
+          "id": "d7d53b7cea824a278e58064ad4c5c664",
+          "stepType": "Prompt",
+          "name": "Short Description",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please enter some additional information about your request."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "c477414cb4894cc7934676d434633d28",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "211f153968c64c1f9c472eec229fc69d": {
+          "id": "211f153968c64c1f9c472eec229fc69d",
+          "stepType": "Prompt",
+          "name": "requested_for",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Select Yes if you want to create this request for you otherwise if you want to create it for someone else then select No."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "f0bcb9577cd842f6a8a87a9ee37cd280"
+        },
+        "076f283cc8314f2bb49c9e67ef10c0ce": {
+          "id": "076f283cc8314f2bb49c9e67ef10c0ce",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "2ab59505dcb64e439b3710069619fd68": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "requested for user",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Select the User for whom you want to create this Request for"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "756c22a795cb44f3a0171cc9af4d0439",
+          "id": "2ab59505dcb64e439b3710069619fd68",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "There are no other users."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_scripted_query",
+            "value": "(function execute(table) {\n    /* Code your glide record query logic here. For example:\n\n        var options = [];\n        var gr = new GlideRecordSecure(table);\n        gr.addEncodedQuery('active=true^numberSTARTSWITHINC001001');\n        gr.setLimit(10);\n        gr.query();\n        while(gr.next()) {\n            options.push({ 'value': gr.getUniqueValue(), 'label': gr.getValue('short_description') });\n        }\n        return options;\n    */\n    var options = [];\n    var gr = new GlideRecord(table);\n    gr.addQuery('role', 'e6e4fb4961fb2410f8779adb2f460a49');\n    gr.query();\n        while (gr.next()) {\n            options.push({ 'value': gr.getValue('user'), 'label': gr.getDisplayValue('user') });\n    }\n    return options;\n})(table)\n"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "533f77b30b044c03b6c5a8760b0e271b": {
+          "id": "533f77b30b044c03b6c5a8760b0e271b",
+          "name": "Create It Service Request",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n    var itServiceRequest = new GlideRecord('x_snc_it_service_it_service_request');\n    itServiceRequest.initialize();\n    itServiceRequest.setValue('u_reference_4', vaInputs.request_type);\n    itServiceRequest.setValue('u_requested_by', vaInputs.user);\n    itServiceRequest.setValue('u_reference_6', vaInputs.requested_for_user);\n    itServiceRequest.setValue('u_string_1', vaInputs.short_description);\n    itServiceRequest.setValue('requested_on', new GlideDate().getByFormat('yyyy-MM-dd'));\n    itServiceRequest.setValue('priority', vaInputs.priority);\n    vaVars.record_id = itServiceRequest.insert();\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "9380c544416b4cff84ffec7e70e9368f": {
+          "id": "9380c544416b4cff84ffec7e70e9368f",
+          "stepType": "RecordOutput",
+          "name": "New Request",
+          "variableId": "",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "script",
+          "tableName": "x_snc_it_service_it_service_request",
+          "fields": [
+            "u_reference_6",
+            "u_string_1",
+            "priority"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "sys_id={{vaVars.record_id}}"
+          }
+        },
+        "2e36d6a766294ee08fc780da5423e1c0": {
+          "id": "2e36d6a766294ee08fc780da5423e1c0",
+          "stepType": "TableOutput",
+          "name": "Show IT Service Requests",
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "IT Service Requests of "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.name}}",
+                      "displayValue": "Input Variables➛User➛Name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "displayColumnHeaders": true,
+          "dataSourceType": "table",
+          "script": "",
+          "tableName": "x_snc_it_service_it_service_request",
+          "tableCondition": {
+            "mode": "glide_query",
+            "value": "u_reference_6={{vaInputs.user}}"
+          },
+          "columns": [
+            {
+              "key": "number",
+              "value": "Number",
+              "label": "Number"
+            },
+            {
+              "key": "u_string_1",
+              "value": "Short Description",
+              "label": "Short Description"
+            },
+            {
+              "key": "priority",
+              "value": "Priority",
+              "label": "Priority"
+            }
+          ],
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "There are no requests currently created by you."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "4407d7ebe7d44da794cd9e2a9bc2a3f3": {
+          "stepType": "ChoicePrompt",
+          "name": "priority",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Select the priority of the request"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "d09b795888b240d19f250e88b25e1b5c",
+          "id": "4407d7ebe7d44da794cd9e2a9bc2a3f3",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "7879317881904917bef9f714a67d82f9": {
+          "id": "7879317881904917bef9f714a67d82f9",
+          "name": "Update Requested for user",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n    if(vaInputs.requested_for){\n        vaInputs.requested_for_user = vaInputs.user;\n    }\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "5e51589622584951881822e43f26c4a4",
+          "edgeType": "Edge",
+          "source": "d7d53b7cea824a278e58064ad4c5c664",
+          "target": "4407d7ebe7d44da794cd9e2a9bc2a3f3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a608d18eae644f39a235ca63e92a616f",
+          "edgeType": "Edge",
+          "source": "533f77b30b044c03b6c5a8760b0e271b",
+          "target": "9380c544416b4cff84ffec7e70e9368f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8675454c7e6346c5baff857815679e69",
+          "edgeType": "Edge",
+          "source": "324d50fc1cd54b11b8a13e976fbb6e76",
+          "target": "d7d53b7cea824a278e58064ad4c5c664",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "0f5c239d059a4572beb0325622214b12",
+          "edgeType": "Edge",
+          "source": "c45494130ba944e5a0c4e209f924aa14",
+          "target": "2c545df349f647c59d45a84ad9b53cb7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c6f93a62763740cc9ffe69be5128451b",
+          "edgeType": "Edge",
+          "source": "5c41d7ea88184ac5b57d3ff84b5705aa",
+          "target": "c45494130ba944e5a0c4e209f924aa14",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1f88fd587e2b4d11816f5cc8760f6706",
+          "edgeType": "Edge",
+          "source": "2c545df349f647c59d45a84ad9b53cb7",
+          "target": "feb218f2b0944c0b86c2f0deedf032b6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "710d3bc1f989435e8ffe51197f54c17b",
+          "edgeType": "Branch",
+          "source": "feb218f2b0944c0b86c2f0deedf032b6",
+          "target": "211f153968c64c1f9c472eec229fc69d",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.user_option=new_request",
+            "mode": "query"
+          },
+          "label": "New Request"
+        },
+        {
+          "id": "f87132a21c1d4c47a5ec204ba58ab962",
+          "edgeType": "Edge",
+          "source": "211f153968c64c1f9c472eec229fc69d",
+          "target": "076f283cc8314f2bb49c9e67ef10c0ce",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "00c98a90478a42fcb0473ce1896ddae5",
+          "edgeType": "Branch",
+          "source": "076f283cc8314f2bb49c9e67ef10c0ce",
+          "target": "324d50fc1cd54b11b8a13e976fbb6e76",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.requested_for=true",
+            "mode": "query"
+          },
+          "label": "Request is for  same user"
+        },
+        {
+          "id": "7973cf64b8d6407492c752ef8b530e30",
+          "edgeType": "Branch",
+          "source": "076f283cc8314f2bb49c9e67ef10c0ce",
+          "target": "2ab59505dcb64e439b3710069619fd68",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.requested_for=false",
+            "mode": "query"
+          },
+          "label": "Requested for someone else"
+        },
+        {
+          "id": "ed9912ff70514b80af15f89a41ddc881",
+          "edgeType": "Edge",
+          "source": "2ab59505dcb64e439b3710069619fd68",
+          "target": "324d50fc1cd54b11b8a13e976fbb6e76",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b58ba2fc267b488791b49d29126e0043",
+          "edgeType": "Edge",
+          "source": "9380c544416b4cff84ffec7e70e9368f",
+          "target": "898bd71ac63e44a3a782ff75887b55fa",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "07b9f0bd6e3342659dc05f4060bff469",
+          "edgeType": "Branch",
+          "source": "feb218f2b0944c0b86c2f0deedf032b6",
+          "target": "2e36d6a766294ee08fc780da5423e1c0",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.user_option=show_requests",
+            "mode": "query"
+          },
+          "label": "Show Existing Requests"
+        },
+        {
+          "id": "72d7c10d14e34206a1a0bd4bf5f23738",
+          "edgeType": "Edge",
+          "source": "2e36d6a766294ee08fc780da5423e1c0",
+          "target": "898bd71ac63e44a3a782ff75887b55fa",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "33d879595bf843f090b12846ad6dfbe4",
+          "edgeType": "Edge",
+          "source": "4407d7ebe7d44da794cd9e2a9bc2a3f3",
+          "target": "7879317881904917bef9f714a67d82f9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8257a62ca26f44b0bf847f3d56838b77",
+          "edgeType": "Edge",
+          "source": "7879317881904917bef9f714a67d82f9",
+          "target": "533f77b30b044c03b6c5a8760b0e271b",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "d266ac33d3964863aa42cd88e68cbcda": {
+      "id": "d266ac33d3964863aa42cd88e68cbcda",
+      "name": "user_option",
+      "label": "User Option",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Create new request",
+          "value": "new_request"
+        },
+        {
+          "label": "show all requests",
+          "value": "show_requests",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "76201d1fa1744e27825fdae2a567f63f": {
+      "id": "76201d1fa1744e27825fdae2a567f63f",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "va_option",
+      "label": "va_option",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "6b142d143614423d98db59089a176a94": {
+      "id": "6b142d143614423d98db59089a176a94",
+      "name": "request_type",
+      "label": "Request Type",
+      "varType": "reference",
+      "table": "x_snc_it_service_request_type",
+      "category": "vaInputs"
+    },
+    "c477414cb4894cc7934676d434633d28": {
+      "id": "c477414cb4894cc7934676d434633d28",
+      "name": "short_description",
+      "label": "Short Description",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTYyMTk0MTI2ODc3MCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "f0bcb9577cd842f6a8a87a9ee37cd280": {
+      "id": "f0bcb9577cd842f6a8a87a9ee37cd280",
+      "name": "requested_for",
+      "label": "Requested_for",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs"
+    },
+    "756c22a795cb44f3a0171cc9af4d0439": {
+      "id": "756c22a795cb44f3a0171cc9af4d0439",
+      "name": "requested_for_user",
+      "label": "Requested For User",
+      "varType": "reference",
+      "table": "sys_user_has_role",
+      "category": "vaInputs"
+    },
+    "c71754db357c44518b700831974a5a9a": {
+      "id": "c71754db357c44518b700831974a5a9a",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "record_id",
+      "label": "record_id",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "d09b795888b240d19f250e88b25e1b5c": {
+      "id": "d09b795888b240d19f250e88b25e1b5c",
+      "name": "priority",
+      "label": "Priority",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Low",
+          "value": "3"
+        },
+        {
+          "label": "Medium",
+          "value": "2",
+          "checked": true
+        },
+        {
+          "label": "High",
+          "value": "1",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>IT Service Request,Service Request,Monitor issue,VPN,Account access,IT Request</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>IT Service Request</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles>x_snc_it_service.employee,x_snc_it_service.it admin,admin</roles>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-23 16:18:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4e790f252c58b810f877743856500699</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>IT Service Request</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_update_name>sys_cb_topic_4e790f252c58b810f877743856500699</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 17:25:19</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=4e790f252c58b810f877743856500699"/>
+</record_update>

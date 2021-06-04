@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_notification">
+    <sys_notification action="INSERT_OR_UPDATE">
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <condition/>
+        <description/>
+        <event/>
+        <include_originator>false</include_originator>
+        <name>Request is created</name>
+        <order>100</order>
+        <recipient_fields>u_reference_6,u_requested_by</recipient_fields>
+        <recipient_users/>
+        <sys_class_name>sys_notification</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 05:08:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e2a2703b01d8f010f8778814f2387c97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request is created</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_update_name>sys_notification_e2a2703b01d8f010f8778814f2387c97</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 05:08:56</sys_updated_on>
+        <table>x_snc_it_service_it_service_request</table>
+        <triggered_by>record_change</triggered_by>
+    </sys_notification>
+</record_update>

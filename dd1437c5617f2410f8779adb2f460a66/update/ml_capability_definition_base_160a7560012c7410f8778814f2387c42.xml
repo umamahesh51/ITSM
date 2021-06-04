@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_base">
+    <ml_capability_definition_base action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="NLU">b4ddf73453c73300d1dcddeeff7b1288</capability>
+        <current_solution_version/>
+        <dataset_language>en</dataset_language>
+        <fields/>
+        <filter/>
+        <request_source>api</request_source>
+        <solution_label>210a7560012c7410f8778814f2387c40</solution_label>
+        <solution_name>ml_x_snc_x_snc_it_service_global_210a7560012c7410f8778814f2387c40</solution_name>
+        <solution_parameters/>
+        <solution_properties>{"label":"210a7560012c7410f8778814f2387c40","authoringModel":{"dummyKey":"dummyValue"}}</solution_properties>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_base</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-01 18:13:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>160a7560012c7410f8778814f2387c42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>210a7560012c7410f8778814f2387c40</sys_name>
+        <sys_package display_value="IT Service Request Management" source="x_snc_it_service">dd1437c5617f2410f8779adb2f460a66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Service Request Management">dd1437c5617f2410f8779adb2f460a66</sys_scope>
+        <sys_update_name>ml_capability_definition_base_160a7560012c7410f8778814f2387c42</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-01 18:13:27</sys_updated_on>
+        <table/>
+        <training_frequency>run_once</training_frequency>
+        <word_vector_corpus/>
+    </ml_capability_definition_base>
+</record_update>
